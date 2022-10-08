@@ -2,9 +2,7 @@
 
 ## Nome do Projeto
 
-- Explicação do projeto: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo nibh, tempus sed rhoncus et, ultrices vitae orci.
-Donec erat mauris, laoreet in tortor vel, eleifend suscipit nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-Aliquam leo nibh, tempus sed rhoncus et, ultrices vitae orci. Donec erat mauris, laoreet in tortor vel, eleifend suscipit nibh. 
+- Explicação do projeto: Devemos criar uma página (usando HTML e CSS) e popular os campos corretamente com os dados com os dados do arquivo data.json ou do objeto JSON usando JavaScript, o objeto já está no arquivo script.js com todos os detalhes sobre no desafio;
 ---
 
 Terminou o projetinho? Dá uma olhada nessa checklist e confere se tá tudo certinho, combinado?!
