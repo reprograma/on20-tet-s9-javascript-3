@@ -26,15 +26,10 @@ Esta é a 9ª semana da turma online: Todas em Tech 0n20 - Front-end, nesta aula
     - [Desestruturando um objeto](#63-desestruturando-um-objeto)
   - [7. Date Object](#7-objeto-date-e-seus-métodos)
     - [toLocaleDateString()](#71-tolocaledatestring)
-  - [8. JSON](#8-json)
-    - [Estrutura JSON](#81-estrutura-json)
-    - [Acessando JSON](#82-acessando-json)
-    - [JSON como Matriz](#83-matrizes-como-json)
-    - [Acessando JSON Matriz](#84-acessando-json-matrizes)
-  - [9. DOM](#9-dom)
-    - [Métodos](#91-métodos-de-manipulação-dom)
-    - [Propriedades](#92-propriedades-de-manipulação-dom)
-    - [Eventos](#93-eventos)
+  - [8. DOM](#8-dom)
+    - [Métodos](#81-métodos-de-manipulação-dom)
+    - [Propriedades](#82-propriedades-de-manipulação-dom)
+    - [Eventos](#83-eventos)
 ## Apresentação
 
 ### Quem é a professora Lilit?
@@ -493,111 +488,7 @@ console.log(dataLonga); // sábado, 08 de outubro de 2022
 ```
 
 ---
-## 8. JSON
-
-JavaScript Object Notation (JSON) é um formato baseado em texto padrão para representar dados estruturados com base na sintaxe do objeto JavaScript; _(MDN)_
-
-Mesmo que se assemelhe à sintaxe literal do objeto JavaScript, ele pode ser usado independentemente do JavaScript, e muitos ambientes de programação possuem a capacidade de ler (analisar) e gerar JSON; _(MDN)_
-
-O JSON é transmitido por uma rede como string, o que permite ser utilizado em uma variedade enorme de aplicações, o JavaScript possui o Objeto global `JSON` que possui métodos para converter para objeto quando queremos acessar os dados e para string quando queremos enviá-lo por rede;
-
-Um objeto JSON pode ser armazenado em seu próprio arquivo. _(MDN)_ (__ex.: arquivo.json__)
-
-### 8.1. Estrutura JSON
-
-```json
-{
-  "squadName": "Super hero squad",
-  "homeTown": "Metro City",
-  "formed": 2016,
-  "secretBase": "Super tower",
-  "active": true,
-  "members": [
-    {
-      "name": "Molecule Man",
-      "age": 29,
-      "secretIdentity": "Dan Jukes",
-      "powers": [
-        "Radiation resistance",
-        "Turning tiny",
-        "Radiation blast"
-      ]
-    },
-    {
-      "name": "Madame Uppercut",
-      "age": 39,
-      "secretIdentity": "Jane Wilson",
-      "powers": [
-        "Million tonne punch",
-        "Damage resistance",
-        "Superhuman reflexes"
-      ]
-    },
-    {
-      "name": "Eternal Flame",
-      "age": 1000000,
-      "secretIdentity": "Unknown",
-      "powers": [
-        "Immortality",
-        "Heat Immunity",
-        "Inferno",
-        "Teleportation",
-        "Interdimensional travel"
-      ]
-    }
-  ]
-}
-```
-
-_(fonte: MDN)_
-
-### 8.2. Acessando JSON
-
-```js
-  console.log(superHeroes.homeTown)
-  console.log(superHeroes['active'])
-  console.log(superHeroes['members'][1]['powers'][2])
-```
-
-### 8.3. Matrizes como JSON
-
-```json
-[
-  {
-    "name": "Molecule Man",
-    "age": 29,
-    "secretIdentity": "Dan Jukes",
-    "powers": [
-      "Radiation resistance",
-      "Turning tiny",
-      "Radiation blast"
-    ]
-  },
-  {
-    "name": "Madame Uppercut",
-    "age": 39,
-    "secretIdentity": "Jane Wilson",
-    "powers": [
-      "Million tonne punch",
-      "Damage resistance",
-      "Superhuman reflexes"
-    ]
-  }
-]
-```
-
-### 8.4. Acessando JSON (matrizes)
-
-```js
-  console.log(heroes[0]["powers"][0])
-```
-
-### 8.5. Importante
-
-> JSON contém apenas propriedades, sem métodos; <br> JSON só aceita aspas duplas; <br> JSON não aceita chaves/propriedades sem aspas como objetos JS, toda string precisa usar aspas;
-
----
-## 9. DOM
+## 8.  DOM
 
 <img src='./assets/dom.png' width=700 alt='árvore de estrutura do DOM'>
 
@@ -610,7 +501,7 @@ DOM é uma sigla que significa Document Object Model. Quando a página é carreg
 
 O DOM é a representação do objeto do documento HTML e atua como uma interface de programação que permite a manipulação de sua estrutura com o JavaScript ou outras linguagens. Podemos manipular o DOM para realizar alterações na estrutura do HTML, alterar estilos, modificar conteúdos e adicionar diversos eventos.
 
-### 9.1. Métodos de manipulação DOM
+### 8.1. Métodos de manipulação DOM
 
 O DOM possui muitos métodos, são eles que fazem a ligação entre os nós (elementos) e os eventos.
 
@@ -627,7 +518,7 @@ Seguem alguns dos principais métodos, para a lista completa acesse a [documenta
 - `removeChild()` -> Remove um elemento filho e retorna o elemento removido;
 - `parentNode()` -> Retorna a mãe de um elemento.
 
-### 9.2 Propriedades de manipulação DOM
+### 8.2 Propriedades de manipulação DOM
 
 - `innerText` -> define ou obtém o conteúdo textual "renderizado" de um nó e seus descendentes;
 - `innerHTML` -> define ou obtém a sintaxe HTML contida no elemento;
@@ -639,7 +530,7 @@ Seguem alguns dos principais métodos, para a lista completa acesse a [documenta
   - `contains()` -> Retorna um valor booleano, indicando se um elemento tem o nome da classe especificada;
 - `style` -> Acrescenta/modifica um estilo ao elemento;
 
-### 9.3 Eventos
+### 8.3 Eventos
 
 Um eventos é um conjunto de ações que são realizadas em um determinado elemento da página web, seja ele um texto, uma imagem, ou uma div, por exemplo. A Grande maiorria dos eventos nascem na interação da usuária com a aplicação, como:
 
