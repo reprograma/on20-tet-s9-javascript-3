@@ -1,5 +1,3 @@
-// on17
-
 const json = [
   {
     "imagem": "./images/pose.jpg",
