@@ -1,6 +1,4 @@
-
-
-let json = [
+const json = [
   {
     "imagem": "./images/pose.jpg",
     "titulo": "Pose",
