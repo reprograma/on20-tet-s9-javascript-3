@@ -92,13 +92,25 @@ const cardsContainer = document.querySelector(".container");
     let hrCinco = document.createElement("hr");
     cards.appendChild(hrCinco);
 
-    let instagram = document.createElement("span");
-    instagram.innerHTML = `<b>Instagram</b>: ${e.instagram}`;
+    let instagram = document.createElement("a");
+    instagram.className = "card_ancora";
+    instagram.setAttribute("href", e.instagram);
     cards.appendChild(instagram);
-    instagram.setAttribute('href', e.instagram) 
-    image.setAttribute("src", e.imagem);
+  
+    let instagramLogo = document.createElement("img");
+    instagramLogo.className = "instagram_image";
+    instagramLogo.setAttribute("src", "./images/instagram.png");  
+    cards.appendChild(instagramLogo);
+    
+    function AbrirEmOutraPagina (instagram){
+      let win = window.open(instagram, '_blank')
+    }
+    instagramLogo.addEventListener('click',() =>{
+      AbrirEmOutraPagina (instagram)
+    })
+    
   });
-}
+  };
 
 preencherCards();
 
