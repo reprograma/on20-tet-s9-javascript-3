@@ -1,0 +1,80 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: 'Nunito', sans-serif;
+}
+body {
+  min-height: 100vh;
+  width: 100%;
+  background-color: black
+
+
+}
+
+h1{
+	text-align: center;
+	padding-top: 5vh;
+	color:white;
+	font-size: 30px;
+	box-sizing: border-box;
+  }
+
+  .container{
+	display: flex;
+	width: 100%;
+	height: 100%;
+	padding-top: 5vh;
+	justify-content: center;
+   
+  
+  }
+
+h2{
+  text-align: center;
+  padding-top: 5vh;
+  color: black;
+  font-size: 20px;
+  box-sizing: border-box;
+}
+
+.cards{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 250px;
+  height: 600px;
+  margin: 10px;
+  border-radius: 10px;
+  justify-content: space-evenly;
+  border: solid 2px black
+ 
+
+
+}
+.cards p {
+    font-size: 15px;
+    margin: 0 10px;
+    text-align:start;
+	align-items: stretch;
+}
+
+img {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  width: 100%;
+  height: 200px;
+}
+
+hr {
+  width: 250px;
+  opacity: 0.4;
+  margin: 1rem 0;
+}
+
+.instagram{
+  width: 45px
+}
