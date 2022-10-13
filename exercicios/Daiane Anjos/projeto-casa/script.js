@@ -50,7 +50,7 @@ const json = [
 let container = document.querySelector(".section-container");
 
 function preencherCards() {
-  json.map((e) => {
+  json.forEach((e) => {
     let cards = document.createElement("div");
      cards.classList.add("cards");
      container.appendChild(cards);
@@ -81,7 +81,7 @@ function preencherCards() {
      cards.appendChild(terceiroHr);
 
     let generos = document.createElement("p");
-     generos.innerHTML = `<b>Gêneros</b>: ${e.generos.join(" - ")}`;
+     generos.innerHTML = `<b>Gêneros</b>: ${e.generos.join(", ")}`;
      cards.appendChild(generos);
 
     let quartoHr = document.createElement("hr");
