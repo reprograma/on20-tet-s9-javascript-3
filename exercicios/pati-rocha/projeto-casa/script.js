@@ -51,11 +51,21 @@ const json = [
 2. Repare que este Json é uma matriz, logo é possível usar métodos de array para acessar seu conteúdo;
 3. Entregue este exercício da maneira que conseguir, use o exemplo da sala para guiar nesta construção;
 */
+const body = document.querySelector('body');
+const header = document.getElementById('header');
 const main = document.getElementById('main');
-const mainTitle = document.createElement('h1');
-mainTitle.innerHTML = 'séries estreladas por mulheres trans e travestis';
-main.appendChild(mainTitle)
-const instagram = document.createElement('a');
+
+const headerTitle = document.createElement('h1');
+headerTitle.innerText = 'visivilidade trans';
+header.appendChild(headerTitle);
+const headerSubtitle = document.createElement('h2');
+headerSubtitle.innerText = 'Séries Estreladas por Mulheres \nTrans e Travestis';
+header.appendChild(headerSubtitle);
+const footer = document.createElement('footer');
+const paragrafo = document.createElement('p')
+paragrafo.innerHTML = "&copyPati Rocha - 2022"
+body.appendChild(footer);
+footer.appendChild(paragrafo);
 
 function criarCards (json) {
   json.forEach((serie) => {
@@ -69,7 +79,7 @@ function criarCards (json) {
     ul.appendChild(li);
 
     const titleCard = document.createElement('li');
-    titleCard.innerHTML = `<h2>${serie.titulo}</h2>` ;
+    titleCard.innerHTML = `<h3>${serie.titulo}</h3>` ;
     ul.appendChild(titleCard);
 
     const year = document.createElement('li');
@@ -77,20 +87,28 @@ function criarCards (json) {
     ul.appendChild(year);
 
     const director = document.createElement('li');
-    director.innerText = serie.diretor;
+    director.innerText = `Diretor: ${serie.diretor}`;
     ul.appendChild(director);
 
     const genres = document.createElement('li');
-    genres.innerText = serie.generos.join(' - ');
+    genres.innerText = `Gêneros: ${serie.generos.join(' - ')}`;
     ul.appendChild(genres);
 
     const cast = document.createElement('li');
-    cast.innerText = serie.elenco.join(' - ');
+    cast.innerText = `Elenco: ${serie.elenco.join(' - ')}`;
     ul.appendChild(cast);
 
     const instagram = document.createElement('li');
-    instagram.setAttribute('href', serie.instagram);
-    ul.appendChild(instagram);
+    const ancora = document.createElement('a');
+    const icon = document.createElement('img');
+    icon.classList.add('icon');
+    icon.setAttribute('src','./images/pngwing.com.png');
+    icon.setAttribute('alt', 'ícone do instagram');
+    ancora.setAttribute('href',serie.instagram);
+    ancora.setAttribute('target', '_blank');
+    ancora.appendChild(icon);
+    ul.appendChild(instagram);  
+    instagram.appendChild(ancora);    
   })
 }
 criarCards(json);
