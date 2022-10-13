@@ -75,6 +75,7 @@ function criarCards (json) {
 
     const img = document.createElement('img');    
     img.setAttribute('src', serie.imagem);
+    img.setAttribute('alt', '')
     li.appendChild(img);
     ul.appendChild(li);
 

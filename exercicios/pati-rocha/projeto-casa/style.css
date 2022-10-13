@@ -32,6 +32,7 @@ main {
     justify-content: center;
     align-items: center;
     padding-top: 20px;
+    
 }
 ul {
     align-items: flex-start;
@@ -77,7 +78,7 @@ footer p {
     background-color: #0681775d;
     font-weight: 500;
     font-family: 'Bebas Neue', cursive;
-   padding: 5px;
+    padding: 5px;
     text-align: center;
 }
 @media (min-width:601px) {
@@ -104,7 +105,7 @@ footer p {
         flex-wrap: wrap;
         justify-content: space-evenly;        
         gap: 20px;
-        padding: 30px;
+        padding: 0 40px;
     } 
     p {
         color: #e8f1f0;
