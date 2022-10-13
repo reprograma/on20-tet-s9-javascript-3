@@ -48,6 +48,52 @@ const json = [
   },
 ]
 
+const imagem = document.getElementById('imagem')
+const titulo = document.getElementById('titulo')
+const ano = document.getElementById('ano')
+const diretor = document.getElementById('diretor')
+const genero = document.getElementById('genero')
+const elenco = document.getElementById('elenco')
+const instagram = document.getElementById('instagram')
+const select = document.getElementById('select')
+const principal = document.getElementById('principal')
+
+function criarOptions() {
+  json.forEach(element => {
+    // preencher as opçoes do select
+    const option = document.createElement('option')
+    option.value = element.titulo
+    option.innerText = element.titulo
+    select.appendChild(option)
+})
+}
+
+preencherDados = () => {
+
+  const opcaoSelecionada = select.options[select.selectedIndex].text
+  console.log(opcaoSelecionada);
+
+  json.forEach(element => {
+
+    if (opcaoSelecionada === element.titulo) {
+      principal.style.display = "flex"
+      // preencher as informaçoes no card
+          imagem.setAttribute('src', element.imagem)
+          titulo.innerText = element.titulo
+          ano.innerHTML = element.ano
+          diretor.innerHTML = element.diretor
+          genero.innerHTML = element.generos.join(' | ')
+          elenco.innerHTML = element.elenco.join(' - ')
+          instagram.setAttribute('href', element.instagram )
+      
+    }
+  });
+}
+
+criarOptions() 
+// por algum motivo no meu navegador o addEventListener não esta funcionando.
+// select.addEventListener('change', preencherDados())
+
 /* 
 
 O exercício consiste em usar JavaScript para popular os campos corretamente com os dados do arquivo data.json (ou do objeto JSON) um site de informações sobre séries protagonizadas por mulheres trans e travestis, neste caso a página exibe 5 séries, em 5 cards diferentes em uma só página;

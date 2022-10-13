@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0e3817284c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./script.js"></script>
+    <title>Projeto Casa</title>
+</head>
+<body>
+    <header>
+        <select name="select" id="select" onchange="preencherDados()">
+            <option value="">Selecione uma Artista</option>
+        </select>
+    </header>
+   <main id="principal">
+       <img id="imagem" src="./images/euphoria.jpg" alt="">
+    <section class="informaçao">
+        <h1 id="titulo">Nome</h1>
+        <hr>
+        <p>Ano:  <br> <span class="dynamic-text" id="ano"></span></p>
+        <hr>
+        <p>Diretor:  <br> <span class="dynamic-text" id="diretor"></span></p>
+        <hr>
+        <p>Gênero:  <br> <span class="dynamic-text" id="genero"></span></p>
+        <hr>
+        <p>Elenco:  <br> <span class="dynamic-text" id="elenco"></span></p>
+        <hr>
+        <a id="instagram" target="_blank" href="">
+            <i class="fab fa-instagram"></i>
+          </a>
+    </section>
+    
+   </main> 
+
+</body>
+</html>
