@@ -16,6 +16,7 @@
   }
 
   header{
+    text-align: center;
     padding: 50px;
   }
 
@@ -26,18 +27,63 @@
   }
 
   main{
-    background-color: wheat;
+    background-color: white;
     display: none;
     flex-direction: row-reverse;
+    margin-top: 30px;
   }
 
   .informaçao{
-    padding: 20px;
-    
+    padding: 40px;
+    width: 300px;
   }
 
-  img{
-    height: 400px;
+  section p{
+    font-style: oblique;
+  }
+
+  main img{
+    height: 300px;
+    width: 300px;
+    margin-top: 33px;
+  }
+
+  .card{
+    width: 200px;
+    height: 250px;
+    list-style: none;
+    text-align: center;
+
+  }
+
+  .card img{
+    height: 150px;
+    border-radius: 50%;
+    width: 150px;
+    margin: 15px;
+  }
+
+  .card h2{
+     font-size: 25px;
+     font-style: italic;
+  }
+
+  ul{
+    display: flex;
+    padding: 20px;
+  }
+
+  h1{
+    font-style: oblique;
+    font-size: 40px;
+  }
+
+
+  a {
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    color: blueviolet;
   }
 
 

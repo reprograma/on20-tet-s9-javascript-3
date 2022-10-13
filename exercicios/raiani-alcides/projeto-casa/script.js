@@ -57,6 +57,27 @@ const elenco = document.getElementById('elenco')
 const instagram = document.getElementById('instagram')
 const select = document.getElementById('select')
 const principal = document.getElementById('principal')
+const lista = document.getElementById('lista')
+
+function mostrarTodos() {
+  
+  json.forEach(element => {
+    let li = document.createElement('li')
+    
+    li.classList.add('card')
+    let imgElement = document.createElement('img')
+    imgElement.setAttribute('src',  element.imagem)
+
+    let TituloElement = document.createElement('h2')
+    TituloElement.innerText =  element.titulo
+    
+    li.append(imgElement, TituloElement);
+    lista.appendChild(li)
+  
+  });
+}
+
+mostrarTodos()
 
 function criarOptions() {
   json.forEach(element => {
