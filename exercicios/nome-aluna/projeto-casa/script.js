@@ -1,4 +1,3 @@
-// on17
 
 const json = [
   {
@@ -59,3 +58,15 @@ Importante:
 3. Entregue este exercício da maneira que conseguir, use o exemplo da sala para guiar nesta construção;
 
 */
+
+const imagem = document.getElementById('imagem')
+const titulo = document.getElementById('titulo')
+const ano = document.getElementById('ano')
+const diretor = document.getElementById('diretor')
+const generos = document.getElementById('generos')
+const elenco = document.getElementById('elenco')
+const instagram = document.getElementById('instagram')
+
+
+
+

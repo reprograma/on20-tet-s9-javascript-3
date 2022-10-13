@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;1,400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-size: 10px;
+  font-family: 'Nunito', sans-serif; /* https://fonts.google.com/specimen/Nunito */
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  /*background-color: #c2a3ec; /* https://flatuicolors.com/palette/de */
+  background-image: linear-gradient(violet,rgb(209, 127, 209), rgb(245, 245, 136));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main-wrapper {
+  /*background-color: #f1f1f140;*/
+  /*backdrop-filter: blur(10px);*/
+  min-width: 35rem;
+  min-height: 60vh;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 10rem;
+  box-shadow: 2px 4px 10px #57657470;
+  margin: 10rem;
+}
+
+#photography {
+  margin-top: 1rem;
+  border-radius: 50%;
+  border: solid 2px #a55eea50;
+}
+
+#title {
+  margin: 2rem 0 1rem 0;
+  font-size: 4rem;
+  color: #110d0d99;
+}
+
+
+.tipography {
+  font-size: 1.6rem;
+  color: #0e0d0d99;
+  font-weight: 600;
+}
+
+hr {
+  margin: 1rem 0;
+  opacity: .2;
+}
+
+
+.fab {
+  margin-top: 1.8rem;
+  font-size: 3rem;
+  text-align: center;
+  width: 100%;
+  filter: drop-shadow(1px 1px 1px #57657490);
+}
+
+.flexbox-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 0;
+    justify-content: center;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.flexbox-item {
+    width: 350px;
+    margin: 20px;
+    padding: 30px;
+    border: 1px solid palevioletred;
+    background: rgb(208, 60, 245);
+    border-radius: 55px;
+    box-shadow: 2px 4px 10px #57657470;
+}
