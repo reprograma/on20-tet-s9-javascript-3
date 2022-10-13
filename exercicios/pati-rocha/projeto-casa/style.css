@@ -68,11 +68,10 @@ h3{
 li:last-child {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     width: 100%;
     margin-bottom: 10px;
     height: 100%;
-    padding-top: 15px;
 }
 footer p {
     background-color: #0681775d;
