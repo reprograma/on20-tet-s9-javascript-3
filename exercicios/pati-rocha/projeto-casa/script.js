@@ -56,7 +56,7 @@ const header = document.getElementById('header');
 const main = document.getElementById('main');
 
 const headerTitle = document.createElement('h1');
-headerTitle.innerText = 'visivilidade trans';
+headerTitle.innerText = 'visibilidade trans';
 header.appendChild(headerTitle);
 const headerSubtitle = document.createElement('h2');
 headerSubtitle.innerText = 'Séries Estreladas por Mulheres \nTrans e Travestis';
