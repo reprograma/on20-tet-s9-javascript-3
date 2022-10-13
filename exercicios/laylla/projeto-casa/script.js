@@ -46,6 +46,31 @@ const json = [
   },
 ]
 
+const sessaoPrincipal = document.getElementById('sessao-principal')
+
+json.forEach((item) => {
+  let filme = document.createElement('div')
+  filme.className = "filme"
+
+  filme.innerHTML = `
+    <img src="${item.imagem}" width=200 id="photography" alt="foto do filme pose">
+    <h1 id="title">${item.titulo}</h1>
+    <div class="infos-wrapper">
+        <hr>
+        <p class="ano">${item.ano}</p>
+        <hr>
+        <p class="diretor">${item.titulo}</p>
+        <p class="tipography">Gêneros: <br><span class="dynamic-text" id="gender"></span></p>
+        <hr>
+        <p class="tipography">Elenco: <br><span class="dynamic-text" id="elenco"></span></p>
+        <hr>
+        <a id="instagram" target="_blank" href=""><i class="fab fa-instagram"></i></a>
+    </div>
+  `
+
+  sessaoPrincipal.appendChild(filme)
+})
+
 /* 
 
 O exercício consiste em usar JavaScript para popular os campos corretamente com os dados do arquivo data.json (ou do objeto JSON) um site de informações sobre séries protagonizadas por mulheres trans e travestis, neste caso a página exibe 5 séries, em 5 cards diferentes em uma só página;
