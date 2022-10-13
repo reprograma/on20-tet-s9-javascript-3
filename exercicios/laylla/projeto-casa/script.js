@@ -50,25 +50,37 @@ const sessaoPrincipal = document.getElementById('sessao-principal')
 json.forEach((item) => {
   let elenco = ''
   let genero = ''
+  let totalElenco = item.elenco.length
+  let totalGeneros = item.generos.length
+
   let filme = document.createElement('div')
   filme.className = "filme"
-
-  item.elenco.forEach((itemElenco) => {
-    elenco = elenco + `${itemElenco} `
+  console.log(totalElenco)
+  item.elenco.forEach((itemElenco, index) => {
+    if (index === totalElenco - 1) {
+      elenco = elenco + `${itemElenco}`
+    } else {
+      elenco = elenco + `${itemElenco}, `
+    }
   })
   
-  item.generos.forEach((itemGenero) => {
-    genero = genero + `${itemGenero} `
+  item.generos.forEach((itemGenero, index) => {
+    if (index === totalGeneros - 1) {
+      genero = genero + `${itemGenero}`
+    } else {
+      genero = genero + `${itemGenero}, `
+    }
   })  
 
   filme.innerHTML = `
-    <img src="${item.imagem}" width=200 id="photography" alt="foto do filme pose">
+    <img src="${item.imagem}" width=200 id="photography" alt="banner do filme ${item.titulo}">
     <h1 id="title">${item.titulo}</h1>
     <div class="infos-wrapper">
         <hr>
-        <p class="ano">${item.ano}</p>
+        <p class="ano">Ano: ${item.ano}</p>
         <hr>
-        <p class="diretor">${item.diretor}</p>
+        <p class="diretor">Diretor: <br> ${item.diretor}</p>
+        <hr>
         <p class="tipography">Gêneros: <br><span class="dynamic-text" id="gender">${genero}</span></p>
         <hr>
         <p class="tipography">Elenco: <br><span class="dynamic-text" id="elenco">${elenco}</span></p>

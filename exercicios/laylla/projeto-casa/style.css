@@ -2,7 +2,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    color: black
+    color: rgb(255, 255, 255);
+    background-color: black;
 }
 
 #nav-cabecalho {
@@ -43,6 +44,7 @@ a:hover {
     display: flex;
     justify-content: space-around;
     margin-top: 30px;
+    background: linear-gradient(#000000,#a70c0c )
 }
 
 .filme {
@@ -50,4 +52,41 @@ a:hover {
     flex-direction: column;
     border: 1px black solid;
     width: 250px;
+    align-items: center;
+}
+.filme > img {
+    width: 200px;
+    height: 180px;
+    border-radius: 15px;
+}
+
+.linha {
+    border-color: rgb(238, 42, 42);
+}
+h1 {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+h2 {
+   margin-left: 17em;
+}
+.infos-wrapper {
+    margin: 10px;
+}
+#instagram {
+    text-decoration: none;
+    color: #ffff;
+    
+}
+#instagram :hover {
+    color: rgb(238, 42, 42) ;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    background-color: #a70c0c;
+    height: 50px;
+    align-items: center;
 }
