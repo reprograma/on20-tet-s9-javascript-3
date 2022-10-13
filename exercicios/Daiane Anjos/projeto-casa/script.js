@@ -84,8 +84,8 @@ function preencherCards() {
      generos.innerHTML = `<b>Gêneros</b>: ${e.generos.join(" - ")}`;
      cards.appendChild(generos);
 
-    let QuaquartoHr = document.createElement("hr");
-     cards.appendChild(QuaquartoHr);
+    let quartoHr = document.createElement("hr");
+     cards.appendChild(quartoHr);
 
     let elenco = document.createElement("p");
      elenco.innerHTML = `<b>Elenco</b>: ${e.elenco.join(", ")}`;
