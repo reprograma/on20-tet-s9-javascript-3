@@ -45,72 +45,74 @@ const json = [
     "instagram": "https://www.instagram.com/legendarymax/"
   },
 ]
-const cardsContainer = document.querySelector(".container");
 
- function preencherCards() {
-  json.forEach((e) => {
+
+let container = document.querySelector(".section-container");
+
+function preencherCards() {
+  json.map((e) => {
     let cards = document.createElement("div");
-    cards.classList.add("cards");
-    cardsContainer.appendChild(cards);
+     cards.classList.add("cards");
+     container.appendChild(cards);
 
-    let image = document.createElement("img");
-    image.setAttribute("src", e.imagem);
-    cards.appendChild(image);
+    let imagem = document.createElement("img");
+     imagem.setAttribute("src", e.imagem);
+     cards.appendChild(imagem);
 
-    let title = document.createElement("h2");
-    title.innerHTML = e.titulo;
-    cards.appendChild(title);
+    let titulo = document.createElement("h2");
+    titulo.innerHTML = e.titulo;
+     cards.appendChild(titulo);
 
-    let hrUm = document.createElement("hr");
-    cards.appendChild(hrUm);
+    let primeiroHr = document.createElement("hr");
+     cards.appendChild(primeiroHr);
 
     let ano = document.createElement("p");
-    ano.innerHTML = `<b>Ano</b>: ${e.ano}`;
-    cards.appendChild(ano);  
+     ano.innerHTML = `<b>Ano</b>: ${e.ano}`;
+     cards.appendChild(ano);
 
-    let hrDois = document.createElement("hr");
-    cards.appendChild(hrDois);
+    let segundoHr = document.createElement("hr");
+     cards.appendChild(segundoHr);
 
     let diretor = document.createElement("p");
     diretor.innerHTML = `<b>Diretor</b>: ${e.diretor}`;
     cards.appendChild(diretor);
 
-    const hrTres = document.createElement("hr");
-    cards.appendChild(hrTres);
+    const terceiroHr = document.createElement("hr");
+     cards.appendChild(terceiroHr);
 
     let generos = document.createElement("p");
-    generos.innerHTML = `<b>Gêneros</b>: ${e.generos.join(" - ")}`;
-    cards.appendChild(generos);
+     generos.innerHTML = `<b>Gêneros</b>: ${e.generos.join(" - ")}`;
+     cards.appendChild(generos);
 
-    let hrQuatro = document.createElement("hr");
-    cards.appendChild(hrQuatro);
+    let QuaquartoHr = document.createElement("hr");
+     cards.appendChild(QuaquartoHr);
 
     let elenco = document.createElement("p");
-    elenco.innerHTML = `<b>Elenco</b>: ${e.elenco.join(", ")}`;
-    cards.appendChild(elenco);
+     elenco.innerHTML = `<b>Elenco</b>: ${e.elenco.join(", ")}`;
+     cards.appendChild(elenco);
 
-    let hrCinco = document.createElement("hr");
-    cards.appendChild(hrCinco);
+    let quintoHr = document.createElement("hr");
+     cards.appendChild(quintoHr);
 
     let instagram = document.createElement("a");
-    instagram.className = "card_ancora";
-    instagram.setAttribute("href", e.instagram);
-    cards.appendChild(instagram);
-  
+     instagram.className = "card-instagran";
+     instagram.setAttribute("href", e.instagram);
+     cards.appendChild(instagram);
+
     let instagramLogo = document.createElement("img");
-    instagramLogo.className = "instagram_image";
-    instagramLogo.setAttribute("src", "./images/instagram.png");  
-    cards.appendChild(instagramLogo);
-    
-    function AbrirEmOutraPagina (instagram){
+     instagramLogo.className = "instagram-logo";
+     instagramLogo.setAttribute("src", "./images/instagram.png");
+     cards.appendChild(instagramLogo);
+
+    function AbrirEmOutraPagina(instagram) {
       let win = window.open(instagram, '_blank')
     }
-    instagramLogo.addEventListener('click',() =>{
-      AbrirEmOutraPagina (instagram)
+    instagramLogo.addEventListener('click', () => {
+      AbrirEmOutraPagina(instagram)
     })
-    
+
   });
-  };
+};
 
 preencherCards();
 
@@ -119,6 +121,6 @@ preencherCards();
 O exercício consiste em usar JavaScript para popular os campos corretamente com os dados do arquivo data.json (ou do objeto JSON) um site de informações sobre séries protagonizadas por mulheres trans e travestis, neste caso a página exibe 5 séries, em 5 cards diferentes em uma só página;
 Importante:
 1. Crie seu próprio layout usando HTML e CSS nos arquivos já criados nesta pasta;
-2. Repare que este Json é uma matriz, logo é possível usar métodos de array para acessar seu conteúdo;
+2. Repare que este Json é uma matriz, -logo é possível usar métodos de array para acessar seu conteúdo;
 3. Entregue este exercício da maneira que conseguir, use o exemplo da sala para guiar nesta construção;
 */
