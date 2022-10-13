@@ -515,7 +515,7 @@ Seguem alguns dos principais métodos, para a lista completa acesse a [documenta
 - `createElement()` -> Cria um elemento na página;
 - `createAttribute()` -> Cria um atributo na página;
 - `appendChild()` -> Insere um elemento filho ao final do elemento mãe;
-- `removeChild()` -> Remove um elemento filho e retorna o elemento removido;
+- `removeChild()` -> Remove o primeiro elemento filho e retorna o elemento removido;
 - `parentNode()` -> Retorna a mãe de um elemento.
 
 ### 8.2 Propriedades de manipulação DOM

@@ -1,0 +1,121 @@
+ @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #96d4ce;
+}
+header {
+    background-color:#0681775d;   
+    height: 180px;
+}
+h1{ 
+    font-size: 40px;   
+    font-family: 'Bebas Neue', cursive;
+    padding: 30px 0 20px;  
+    text-align: center;
+    text-transform: uppercase;
+}
+h2 {
+    font-size: 20px;     
+    font-weight: 500;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;    
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    
+}
+ul {
+    align-items: flex-start;
+    background-color: #e8f1f0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1em;
+    /* justify-content: flex-start; */
+    height: 500px;
+    list-style: none;
+    margin: 20px auto;
+    padding: 15px;
+    width: 280px;   
+}
+img {
+    height: 220px;
+    width: 250px;    
+}
+h3{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2em;      
+}
+.icon {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;    
+}
+.icon:hover {
+    opacity: 0.7;
+}
+li:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 100%;
+}
+footer p {
+    background-color: #0681775d;
+    font-weight: 500;
+    font-family: 'Bebas Neue', cursive;
+    padding: 5px;
+    text-align: center;
+}
+@media (min-width:601px) {
+    body {
+        background-color: #021a17;
+    }
+    header {
+        height: 220px;
+    }
+    h1 {
+        color: #e8f1f0;
+        font-size: 50px;   
+    }
+    h2 {
+        color: #e8f1f0;
+        font-size: 30px;     
+        font-weight: 500;
+        font-family: 'Bebas Neue', cursive;
+        text-align: center;    
+    }
+    main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;        
+        gap: 20px;
+        padding: 0 40px;
+    } 
+    p {
+        color: #e8f1f0;
+    }    
+}
+@media (min-width:1230px){
+    main {
+        gap: 100px;
+    }
+}
+
+
+
