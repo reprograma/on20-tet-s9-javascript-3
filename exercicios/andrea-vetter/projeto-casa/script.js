@@ -1,3 +1,5 @@
+// on17
+
 const json = [
   {
     "imagem": "./images/pose.jpg",
@@ -5,7 +7,7 @@ const json = [
     "ano": "2018",
     "diretor": "Ryan Murphy",
     "generos": ["Drama"],
-    "elenco": ["Dominique Jackson", "Indya Moore", "Mj Rodriguez", "Angelica Ross", "Hailie Sahar"], 
+    "elenco": ["Dominique Jackson", "Indya Moore", "Mj Rodriguez", "Angelica Ross", "Hailie Sahar"],
     "instagram": "https://www.instagram.com/poseonfx/"
   },
   {
@@ -14,7 +16,7 @@ const json = [
     "ano": "2021",
     "diretor": "Luis Pinheiro",
     "generos": ["Drama"],
-    "elenco": ["Liniker", "Linn da Quebrada"], 
+    "elenco": ["Liniker", "Linn da Quebrada"],
     "instagram": "https://www.instagram.com/explore/tags/manhasdesetembroserie/"
   },
   {
@@ -23,7 +25,7 @@ const json = [
     "ano": "2019",
     "diretor": "Sam Levinson",
     "generos": ["Drama"],
-    "elenco": ["Hunter Schafer", "Ron Leshem", "Daphna Levin"], 
+    "elenco": ["Hunter Schafer", "Ron Leshem", "Daphna Levin"],
     "instagram": "https://www.instagram.com/euphoria/"
   },
   {
@@ -32,7 +34,7 @@ const json = [
     "ano": "2020",
     "diretor": "Javier Ambrossi",
     "generos": ["Drama", "Biografia"],
-    "elenco": ["Daniela Santiago", "Jedet Sánchez", "Isabel Torres", "Lola Rodríguez", "Paca La Piraña"], 
+    "elenco": ["Daniela Santiago", "Jedet Sánchez", "Isabel Torres", "Lola Rodríguez", "Paca La Piraña"],
     "instagram": "https://www.instagram.com/venenolaserie/"
   },
   {
@@ -41,10 +43,33 @@ const json = [
     "ano": "2020",
     "diretor": "Rik Reinholdtsen",
     "generos": ["Reality Show", "Competição"],
-    "elenco": ["Leiomy Maldonado", "Megan Thee Stallion", "Dashaun Wesley"], 
+    "elenco": ["Leiomy Maldonado", "Megan Thee Stallion", "Dashaun Wesley"],
     "instagram": "https://www.instagram.com/legendarymax/"
   },
 ]
+
+// A primeira solução que achei foi a que me parece a mais segura e trabalhosa: a criação de todos os elementos do HTML usados pelo js. No entanto, achei o cloneNode, então resolvi tentar algo diferente. Só que encontrei um problema: o último item do array aparece primeiro.
+
+let i = 0
+while (json[i]) {
+// for (const [index, filme] of json.entries()) {
+  
+  document.querySelector('.imagem').setAttribute('src', json[i].imagem)
+  document.querySelector('.titulo').innerText = json[i].titulo
+  console.log(json[i].titulo)
+  document.querySelector('#generos').innerHTML = json[i].generos.join(' - ')
+  document.querySelector('#elenco').innerHTML = json[i].elenco.join(' - ')
+  document.querySelector('.instagram').setAttribute('href', json[i].instagram)
+  
+  const mainWrapper = document.querySelector('.main-wrapper')
+  const clone = mainWrapper.cloneNode(true)
+  document.getElementById('main').appendChild(clone)
+  
+  i++
+}
+
+// Essa foi a "solução" que achei pra evitar que apareça o último item do array no começo do for acima. Ainda não sei porque acontece.
+document.querySelectorAll('.main-wrapper')[0].classList.add('disappear');
 
 /* 
 
