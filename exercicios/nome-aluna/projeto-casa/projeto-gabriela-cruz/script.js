@@ -57,3 +57,23 @@ Importante:
 3. Entregue este exercício da maneira que conseguir, use o exemplo da sala para guiar nesta construção;
 
 */
+
+const containers = document.getElementById('containers')
+
+json.forEach((serie) => {
+  const div = document.createElement('div')
+  div.classList.add('serie')
+  div.innerHTML = `
+  <img id="photography" src=${serie.imagem} alt = "foto da serie">
+  <h1 id="title">${serie.titulo}<h1>
+  <p>Ano: ${serie.ano}<p>
+  <p>Diretor: ${serie.diretor}<p>
+  <p>Genero: ${serie.generos}<p>
+  <p>Elenco: ${serie.elenco.join(', ')}<p>
+  <a target="_blank" href=${serie.instagram}><i class="fab fa-instagram"></i></a>
+     
+  `
+  containers.appendChild(div)
+})
+
+

@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;1,400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+  font-family: 'Nunito', sans-serif; /* https://fonts.google.com/specimen/Nunito */
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #B56BBF; /* https://flatuicolors.com/palette/de */
+  justify-content: center;
+  align-items: center;
+  padding: 6%;
+}
+
+main {  
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  gap: 20px;
+      
+}
+
+.serie {
+  border-radius: 3rem;
+  box-shadow: 4px 8px 12px #57657470;
+  align-items: center;
+  padding: 4rem;
+  background-color: #05F2F2;
+  backdrop-filter: blur(10px);
+}
+
+#photography {
+  display: block;
+  margin: auto;
+  margin-top: 1rem;
+  border-radius: 50%;
+  border: solid 2px #a55eea50;
+  max-width: 300px;
+  max-height: 250px;
+}
+
+#title {
+  margin: 2rem 0 1rem 0;
+  font-size: 3rem;
+  color: #B56BBF;
+  
+
+}
+
+p {
+  font-size: 15px;
+  color: purple;
+}
+
+
+.fab {
+  margin-top: 1.8rem;
+  font-size: 3rem;
+  text-align: center;
+  width: 100%;
+  filter: drop-shadow(1px 1px 1px #57657490);
+} 
