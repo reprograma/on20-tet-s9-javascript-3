@@ -57,3 +57,39 @@ Importante:
 3. Entregue este exercício da maneira que conseguir, use o exemplo da sala para guiar nesta construção;
 
 */
+const ano = document.getElementById ('ano')
+const diretor = document .getElementById ('diretor')
+const generos = document .getElementById ('generos')
+const elenco = document .getElementById ('elenco')
+const instagran = document .getElementById ('instagran')
+const title = document.querySelector ('#title')
+const capa= document.getElementById ('image')
+const botaoproximo = document.getElementById ('proximo')
+const botaoanterior =document.getElementById ('anterior')
+
+
+preencherDados = (album) => {
+title.innerText = album.titulo
+ano. innerHTML = album.ano
+diretor .innerHTML = album.diretor
+generos .innerHTML = album.generos
+elenco .innerHTML = album.elenco
+ //instagran. setAttribute ('href',album.instagram) 
+capa. setAttribute ('href',album.imagem)
+
+}
+
+preencherDados (json [0])
+
+
+clicouNoBotaoAnterior = () => {
+  preencherDados (json [1])
+}
+
+clicouNoBotaoProximo = () => {
+  preencherDados (json[2])
+}
+botaoanterior.setAttribute('onclick',clicouNoBotaoAnterior())
+botaoproximo.setAttribute('onclick',clicouNoBotaoProximo())
+
+
