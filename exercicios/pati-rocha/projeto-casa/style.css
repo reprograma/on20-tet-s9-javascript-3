@@ -43,7 +43,7 @@ ul {
     font-family: 'Oswald', sans-serif;
     font-size: 1em;
     /* justify-content: flex-start; */
-    min-height: 450px;
+    height: 500px;
     list-style: none;
     margin: 20px auto;
     padding: 15px;
@@ -60,7 +60,7 @@ h3{
 .icon {
     width: 35px;
     height: 35px;
-    cursor: pointer;
+    cursor: pointer;    
 }
 .icon:hover {
     opacity: 0.7;
@@ -70,6 +70,7 @@ li:last-child {
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin-bottom: 10px;
     height: 100%;
     padding-top: 15px;
 }
@@ -79,6 +80,41 @@ footer p {
     font-family: 'Bebas Neue', cursive;
    padding: 5px;
     text-align: center;
+}
+@media (min-width:601px) {
+    body {
+        background-color: #021a17;
+    }
+    header {
+        height: 220px;
+    }
+    h1 {
+        color: #e8f1f0;
+        font-size: 50px;   
+    }
+    h2 {
+        color: #e8f1f0;
+        font-size: 30px;     
+        font-weight: 500;
+        font-family: 'Bebas Neue', cursive;
+        text-align: center;    
+    }
+    main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;        
+        gap: 20px;
+        padding: 30px;
+    } 
+    p {
+        color: #e8f1f0;
+    }    
+}
+@media (min-width:1230px){
+    main {
+        gap: 100px;
+    }
 }
 
 
