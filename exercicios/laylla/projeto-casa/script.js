@@ -45,12 +45,21 @@ const json = [
     "instagram": "https://www.instagram.com/legendarymax/"
   },
 ]
-
 const sessaoPrincipal = document.getElementById('sessao-principal')
 
 json.forEach((item) => {
+  let elenco = ''
+  let genero = ''
   let filme = document.createElement('div')
   filme.className = "filme"
+
+  item.elenco.forEach((itemElenco) => {
+    elenco = elenco + `${itemElenco} `
+  })
+  
+  item.generos.forEach((itemGenero) => {
+    genero = genero + `${itemGenero} `
+  })  
 
   filme.innerHTML = `
     <img src="${item.imagem}" width=200 id="photography" alt="foto do filme pose">
@@ -59,12 +68,12 @@ json.forEach((item) => {
         <hr>
         <p class="ano">${item.ano}</p>
         <hr>
-        <p class="diretor">${item.titulo}</p>
-        <p class="tipography">Gêneros: <br><span class="dynamic-text" id="gender"></span></p>
+        <p class="diretor">${item.diretor}</p>
+        <p class="tipography">Gêneros: <br><span class="dynamic-text" id="gender">${genero}</span></p>
         <hr>
-        <p class="tipography">Elenco: <br><span class="dynamic-text" id="elenco"></span></p>
+        <p class="tipography">Elenco: <br><span class="dynamic-text" id="elenco">${elenco}</span></p>
         <hr>
-        <a id="instagram" target="_blank" href=""><i class="fab fa-instagram"></i></a>
+        <a id="instagram" target="_blank" href="${item.instagram}"><i class="fab fa-instagram">Visite o instagram</i></a>
     </div>
   `
 
