@@ -1,0 +1,38 @@
+body{
+    background-color: rgb(43, 226, 86);
+}
+
+section{
+    width: 420px;
+    height: 455px;
+    background-color: rgb(36, 32, 32);
+    margin-left: 400px;
+    border-bottom: 5px double blue;
+    border-top: 5px double purple;
+    border-right: 5px double orangered;
+    border-left: 5px double mediumvioletred;
+    text-indent: 60px;
+    border-radius: 20px;
+    
+
+}
+
+img{
+    align-items: center;
+    width: 200px;
+    margin-left: 700px;
+    text-align:justify;
+    border-radius: 50px;
+    margin-right: 100px;
+}
+.tentativa{
+margin-left: 110px;
+color: bisque;
+
+}
+
+#tentativa2, #tentativa3, #tentativa4, #tentativa4, #tentativa5,#titulo{
+    margin-left: 150px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}

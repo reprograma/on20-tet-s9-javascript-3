@@ -24,3 +24,4 @@ preencherDados = (cantora) => {
 }
 
 preencherDados(objetoJson)
+
