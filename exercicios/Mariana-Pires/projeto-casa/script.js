@@ -155,6 +155,7 @@ displayBox5 = (serie) => {
 titleBox = () => {
   tituloOficial.innerText = ("MariFlix 🎥🍿")
 }
+
 //CHAMA A FUNÇÃO
 titleBox()
 displayBox1(pose)
@@ -162,45 +163,3 @@ displayBox2(manhas)
 displayBox3(euphoria)
 displayBox4(veneno)
 displayBox5(legendary)
-
-
-// for (let Manhas of json){ 
-//   photographyManhas.setAttribute('src', json[1].imagem)
-//   titleManhas.innerText = Manhas.titulo
-//   yearManhas.innerText = Manhas.ano
-//   directorManhas.innerText = Manhas.diretor
-//   genresManhas.innerHTML = Manhas.generos.join(' - ')
-//   castingManhas.innerHTML = Manhas.elenco.join(' - ')
-//   instagramManhas.setAttribute('href', Manhas.instagram)
-// }
-
-
-        // photographyPose.setAttribute('src', serie.imagem)
-        // title.innerText = serie.titulo
-        // year.innerText = serie.ano
-        // director.innerText = serie.diretor
-        // genres.innerHTML = serie.generos.join(' - ')
-        // casting.innerHTML = serie.elenco.join(' - ')
-        // instagram.setAttribute('href', serie.instagram)
-      // }
-//     preencherDados(json[0])
-//   }
-// }
-
-
-/* 
-
-O exercício consiste em usar JavaScript para popular os campos corretamente com os dados do arquivo data.json (ou do objeto JSON) um site de informações sobre séries protagonizadas por mulheres trans e travestis, neste caso a página exibe 5 séries, em 5 cards diferentes em uma só página;
-
-Importante:
-
-1. Crie seu próprio layout usando HTML e CSS nos arquivos já criados nesta pasta;
-2. Repare que este Json é uma matriz, logo é possível usar métodos de array para acessar seu conteúdo;
-3. Entregue este exercício da maneira que conseguir, use o exemplo da sala para guiar nesta construção;
-
-passo a passo
-1. criar constantes para acessar html
-2. atribuir constantes a cada propriedade do objeto do array
-3. COMO EU MUDO O HTML SEM MUDAR O HTML MEU MEUDD ASDASDAAAAAAAAAAAA
-
-*/
