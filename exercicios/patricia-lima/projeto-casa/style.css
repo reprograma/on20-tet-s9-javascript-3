@@ -1,0 +1,93 @@
+body{
+  background-color: black;
+
+}
+
+
+header img{
+
+  
+  width: 100%;
+  margin-top: 2;
+  margin-bottom: 1em;
+  height: 0.8%
+  
+}
+
+img{
+  transition: all 0.5s;
+    cursor: pointer;
+  transition: all 0.5s;
+  cursor: pointer;
+  border-radius: 1em;
+  margin-top: 1em;
+  height: 14em;
+}
+
+ img:hover{
+  -webkit-filter: drop-shadow(15px 10px 5px rgba(228, 212, 212, 0.5));
+  filter: drop-shadow(15px 10px 5px rgba(141, 137, 137, 0.5));
+  -webkit-transform: scale(1.5);
+  transform: scale(0.8);
+}
+
+main{
+  
+  margin-left: 1.5em;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+div{
+  
+  margin-left: 3em;
+  border-radius: 0.8em;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(42, 48, 48);
+  
+
+  width: 300px;
+  
+  
+  
+}
+
+p{
+  
+  color: azure;
+  margin-left: 1.5em;
+}
+h2{
+  text-shadow: 0.1em 0.1em 0.2em rgb(71, 123, 113);
+  color: whitesmoke;
+  text-align: center;
+}
+
+a{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  margin-bottom: 10px;
+  height: 100%
+
+}
+
+a img {
+  height: 2em;
+  
+}
+
+.fa-brands{
+  
+  margin-top: 1.8rem;
+  font-size: 3rem;
+  text-align: center;
+  width: 100%;
+  filter: drop-shadow(1px 1px 1px #1c141490);
+  color: rgb(255, 255, 255);
+}
