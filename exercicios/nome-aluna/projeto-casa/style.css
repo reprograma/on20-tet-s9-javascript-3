@@ -1,0 +1,85 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.tv-show-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.tv-show {
+    display: flex;
+    list-style: none;
+    width: 500px;
+    height: 210px;
+    gap: 1em;
+    background-color: #141414;
+}
+
+.image-link {
+    height: 100%;
+    max-width: 50%;
+}
+
+.image-link img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: top left;
+}
+
+.show-title {
+    margin-top: 0.4rem;
+    font-size: 1.3em;
+    display: inline;
+}
+
+.year {
+    font-size: 0.8em;
+    margin-left: 0.5rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.list-generos {
+    list-style: none;
+    display: flex;
+    padding: 0.2em 0 0.8em;
+}
+
+.list-generos li {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.8em;
+    padding-right: 0.5em;
+}
+
+.list-generos li+li:before {
+    content: '•';
+    padding-right: 0.5em;
+}
+
+.director {
+    margin: 0;
+    padding-bottom: 0.3em;
+}
+
+.director-descriptor {
+    font-weight: bold;
+    padding-right: 0.5em;
+}
+
+.list-elenco-descriptor {
+    font-weight: bold;
+    padding-right: 0.5em;
+}
+
+.list-elenco {
+    list-style: none;
+    padding: 0;
+}
+
+.list-elenco li {
+    padding-left: 1em;
+}
