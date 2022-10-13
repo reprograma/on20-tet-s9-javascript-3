@@ -12,14 +12,25 @@
 body {
   min-height: 100vh;
   width: 100%;
-  background-color: #8854d0; /* https://flatuicolors.com/palette/de */
+  background-image: url(./images/Foto.jpg);
+  /* background-color: #167c08; https://flatuicolors.com/palette/de */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+infos-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+
 #main-wrapper {
-  background-color: #f1f1f140;
+  /* background-color: rgb(253, 162, 210); */
+  background-color: rgba(238, 220, 229, 0.1);
   backdrop-filter: blur(10px);
   min-width: 35rem;
   min-height: 60vh;
@@ -31,16 +42,22 @@ body {
   box-shadow: 2px 4px 10px #57657470;
 }
 
-#photography {
+#photography1, #photography2, #photography3, #photography4, #photography5 {
   margin-top: 1rem;
   border-radius: 50%;
   border: solid 2px #a55eea50;
+  height: 15%;
+  width: 15%;
 }
 
-#title {
+#title1, #title2, #title3, #title4, #title5 {
   margin: 2rem 0 1rem 0;
   font-size: 4rem;
-  color: #f3f3f399;
+  /* color: #f3f3f399; */
+  background: -webkit-linear-gradient(left, black 0%, purple 100%);
+  background: linear-gradient(to right, black 0%, purple 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .infos-wrapper {
@@ -50,9 +67,14 @@ body {
 }
 
 .tipography {
-  font-size: 1.6rem;
-  color: #f3f3f399;
+  font-size: 3rem;
+  /* color: #f3f3f399; */
   font-weight: 600;
+  background: -webkit-linear-gradient(left, black 0%, purple 100%);
+  background: linear-gradient(to right, black 0%, purple 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
 }
 
 hr {
@@ -61,7 +83,7 @@ hr {
 }
 
 .dynamic-text {
-  font-size: 1.3rem;
+  font-size: 2.5rem;
   color: #f3f3f399;
   margin-left: 1.5rem;
   font-weight: 600;
