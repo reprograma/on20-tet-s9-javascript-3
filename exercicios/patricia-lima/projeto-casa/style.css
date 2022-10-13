@@ -1,127 +1,93 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;1,400&display=swap');
-body {
-    min-height: 100vh;
-    width: 100%;
-    background-color: #000000; /* https://flatuicolors.com/palette/de */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+body{
+  background-color: black;
 
- 
+}
 
-  #main-wrapper {
+
+header img{
+
   
-    background-color: #55484840;
-    backdrop-filter: blur(10px);
-    min-width: 15rem;
-    min-height: 40vh;
-    padding: 2rem;
-    
-    flex-direction: column;
-    align-items: center;
-    border-radius: 2rem;
-    box-shadow: none;
-    /* box-shadow: 2px 1px 5px #f0d9f370; */
-  }
-
-  #foto1 , #foto2, #foto3 ,#foto4 ,#foto5   {
-   height: 25rem;
-  margin-top: 1rem;
-  border-radius: 3em;
-  border: solid 2px #a55eea50;
+  width: 100%;
+  margin-top: 2;
+  margin-bottom: 1em;
+  height: 0.8%
   
-    
-  }
-  #title1 , #title2 , #title3 , #title4, #title5 {
-    margin-top: 1em;
-    text-align: center;
-    font-size: 2.5rem;
-    color: whitesmoke;
-    background-color: rgb(33, 31, 27);
-  }
- 
-  .infos-wrapper {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    color: azure;
-  }
-
-  .tipography {
-    font-size: 1.6rem;
-    color: #f3f3f399;
-    font-weight: 500;
-  }
-
-  .tipography {
-    font-size: 1.6rem;
-    color: #f3f3f399;
-    font-weight: 500;
-  }
-   
-
-  .ano-filme {
-    font-size: 1.3rem;
-    color: #f3f3f399;
-    margin-left: 1.5rem;
-    font-weight: 600;
-    text-decoration: none;
-  }
-
-  .diretor {
-    font-size: 1.3rem;
-    color: #f3f3f399;
-    margin-left: 1.5rem;
-    font-weight: 600;
-    text-decoration: none;
-  }
-  .generos {
-    font-size: 1.3rem;
-    color: #f3f3f399;
-    margin-left: 1.5rem;
-    font-weight: 600;
-    text-decoration: none;
-  }
-  .elenco {
-    font-size: 1.3rem;
-    color: #f3f3f399;
-    margin-left: 1.5rem;
-    font-weight: 600;
-    text-decoration: none;
-  }
-  
-
-
-
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    font-size: 10px;
-    font-family: 'Nunito', sans-serif; /* https://fonts.google.com/specimen/Nunito */
-  }
-
-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 img{
-    border-radius: 0.8em;
-    height: 10em;
+  transition: all 0.5s;
+    cursor: pointer;
+  transition: all 0.5s;
+  cursor: pointer;
+  border-radius: 1em;
+  margin-top: 1em;
+  height: 14em;
+}
+
+ img:hover{
+  -webkit-filter: drop-shadow(15px 10px 5px rgba(228, 212, 212, 0.5));
+  filter: drop-shadow(15px 10px 5px rgba(141, 137, 137, 0.5));
+  -webkit-transform: scale(1.5);
+  transform: scale(0.8);
+}
+
+main{
+  
+  margin-left: 1.5em;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+div{
+  
+  margin-left: 3em;
+  border-radius: 0.8em;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(42, 48, 48);
+  
+
+  width: 300px;
+  
+  
+  
+}
+
+p{
+  
+  color: azure;
+  margin-left: 1.5em;
+}
+h2{
+  text-shadow: 0.1em 0.1em 0.2em rgb(71, 123, 113);
+  color: whitesmoke;
+  text-align: center;
+}
+
+a{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  margin-bottom: 10px;
+  height: 100%
+
+}
+
+a img {
+  height: 2em;
+  
 }
 
 .fa-brands{
-    margin-top: 1.8rem;
-    font-size: 3rem;
-    text-align: center;
-    width: 100%;
-    filter: drop-shadow(1px 1px 1px #1c141490);
-    color: rgb(255, 255, 255);
-  }
-
+  
+  margin-top: 1.8rem;
+  font-size: 3rem;
+  text-align: center;
+  width: 100%;
+  filter: drop-shadow(1px 1px 1px #1c141490);
+  color: rgb(255, 255, 255);
+}
