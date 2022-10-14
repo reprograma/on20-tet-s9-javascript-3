@@ -14,14 +14,11 @@ body {
   width: 100%;
   /*background-color: #c2a3ec; /* https://flatuicolors.com/palette/de */
   background-image: linear-gradient(violet,rgb(209, 127, 209), rgb(245, 245, 136));
-  display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#main-wrapper {
-  /*background-color: #f1f1f140;*/
-  /*backdrop-filter: blur(10px);*/
+.container {
   min-width: 35rem;
   min-height: 60vh;
   padding: 1rem;
@@ -29,8 +26,10 @@ body {
   flex-direction: row;
   align-items: center;
   border-radius: 10rem;
-  box-shadow: 2px 4px 10px #57657470;
   margin: 10rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 #photography {
@@ -39,10 +38,20 @@ body {
   border: solid 2px #a55eea50;
 }
 
+#title-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 8rem;
+    margin: 2rem 0 1rem 0;
+    color: #3c0547;
+}
+
 #title {
   margin: 2rem 0 1rem 0;
   font-size: 4rem;
-  color: #110d0d99;
+  color: #4b1a5a99;
 }
 
 
@@ -66,22 +75,28 @@ hr {
   filter: drop-shadow(1px 1px 1px #57657490);
 }
 
-.flexbox-container {
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-    width: 0;
-    justify-content: center;
-    flex-grow: 1;
-    align-items: center;
-}
 
 .flexbox-item {
-    width: 350px;
+    width: 250px;
     margin: 20px;
-    padding: 30px;
+    padding: 10px;
     border: 1px solid palevioletred;
     background: rgb(208, 60, 245);
     border-radius: 55px;
     box-shadow: 2px 4px 10px #57657470;
+}
+
+.rodape {
+    padding: 32px;
+    border-top: 0.4px solid #FFF2E7;
+    font-family: 'Sarala', sans-serif;
+    color: #3c0547;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+#paragrafo-footer {
+    font-size: 15px;
 }
