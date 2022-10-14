@@ -1,4 +1,4 @@
-const json = [
+const maratonar = [
   {
     "imagem": "./images/pose.jpg",
     "titulo": "Pose",
@@ -57,3 +57,25 @@ Importante:
 3. Entregue este exercício da maneira que conseguir, use o exemplo da sala para guiar nesta construção;
 
 */
+ //Vou tentar mais um pouco
+
+ const imagemm = document.getElementById('imagemmm')
+ const tituloo = document.getElementById('titulo')
+ const anoo = document.getElementById('tentativa2')
+ const diretorr = document.getElementById('tentativa3')
+ const geneross = document.getElementById('tentativa4')
+ const elencoo = document.getElementById('tentativa5')
+
+ comeceMaratonar = () => {
+  imagemm.setAttribute('src', maratonar [0].imagem)
+  tituloo.innerText = maratonar [0].titulo
+  anoo.innerText = maratonar [0].ano
+  diretorr.innerText = maratonar [0].diretor
+  geneross.innerText = maratonar[0].generos
+  elencoo.innerText = maratonar [0].elenco.join('---')
+
+ }
+
+ comeceMaratonar() 
+
+ // PROFESORA SE VC OLHAR MEU TRABALHO DA A IMPREÇÃO QUE EU NÃO ME ESFORCEI, MAS SERIO EU ME ESFORCEI E MUITO, SINTO MUITO POR TER FICADO HORRIVEL ASSIM, EU TO ME ESFORÇANDO MUITO, PODE NÃO PARECER PQ TA HORRIVEL MAS EU TO DESCULPA..
