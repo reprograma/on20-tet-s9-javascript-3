@@ -72,7 +72,7 @@ Importante:
   anoo.innerText = maratonar [0].ano
   diretorr.innerText = maratonar [0].diretor
   geneross.innerText = maratonar[0].generos
-  elencoo.innerText = maratonar [0].elenco.join('br')
+  elencoo.innerText = maratonar [0].elenco.join('---')
 
  }
 
