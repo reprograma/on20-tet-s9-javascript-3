@@ -62,6 +62,7 @@ json.forEach((dados) => {
         <p>Ano: ${dados.ano}</p>
         <p>Diretor: ${dados.diretor}</p>
         <p>Elenco: ${dados.elenco}</p>
+        <p>Generos ${dados.generos}</p>
         <a href = "${dados.instagram}" target="_blank"> Instagram </a>
       </div>
     </div>
