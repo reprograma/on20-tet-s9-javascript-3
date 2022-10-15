@@ -1,0 +1,41 @@
+
+body {
+  font-family: 'Fuzzy Bubbles', cursive;
+  background: url("./images/lgbt.jpg") repeat right top fixed;
+  }
+   
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-body {
+    padding: 1rem;
+    border-bottom: 6px solid rgb(24, 20, 20) ;
+    margin: 1rem;
+    background-color: rgb(122, 122, 193);
+    border-radius: 30px ;
+    color: rgb(39, 39, 36);
+  }
+
+.titulo {
+  text-align: center;
+  margin: 1rem;
+  padding: 1rem;
+  color: rgb(39, 39, 36);
+  font-size: 70px
+}
+
+#subtitulo {
+  margin: 1rem;
+  padding: 1rem;
+  color: rgb(39, 39, 36);
+
+}
+
+.img-card img {
+  width: 100px;
+  border-radius: 30px;
+  border-bottom: 5px solid rgb(28, 26, 26) ;
+}
