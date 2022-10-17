@@ -57,3 +57,83 @@ Importante:
 3. Entregue este exercício da maneira que conseguir, use o exemplo da sala para guiar nesta construção;
 
 */
+
+const container = document.getElementById('demo')
+
+function creatCard(serie) {
+  return ` 
+  <div class="cards">
+  <img class= "covers" src=${serie.imagem}>
+  <h2 class="titles">${serie.titulo}</h2>
+  <p class= "contents"> Ano: <span class="dynamic-text">${serie.ano}</span></p>
+  <p class= "contents"> Direção: <span class="dynamic-text">${serie.diretor}</span> </p>
+  <p class= "contents"> Gêneros: <span class="dynamic-text">${serie.generos.join(" - ")}</span></p>
+  <p class= "contents"> Elenco: <span class= 'dynamic-text">${serie.elenco.join(" - ")}</span></p>
+  <a target= "_blank" href=${serie.instagram}> <i class="fa-brands fa-instagram"></i></a>
+
+  </div>
+  `
+}
+
+function fillPage(series){
+  series.forEach((serie) => {
+container.innerHTML += creatCard(serie)
+  })
+
+}
+
+
+  fillPage(json)
+
+
+
+// function fillPage(series){
+//   series.map((serie) => {
+//     const card = document.createElement("div")
+//     card.classList.add("cards")
+//     container.appendChild(card)
+
+//     const cover = document.createElement("img")
+//     cover.classList.add("covers")
+//     cover.setAttribute('src', serie.imagem)
+//     card.appendChild(cover)
+
+//     const title = document.createElement("h2")
+//     title.classList.add("titles")
+//     title.innerText= serie.titulo
+//     card.appendChild(title)
+  
+//     const year = document.createElement("p")
+//     year.classList.add("contents")
+//     year.innerHTML = `Ano: <span class="dynamic-text">${serie.ano}
+//     </span>`
+//     card.appendChild(year)
+    
+//     const director = document.createElement("p")
+//     director.classList.add("contents")
+//     director.innerHTML = `Direção: <span class="dynamic-text">${serie.diretor}
+//     </span>`
+//     card.appendChild(director)
+
+//     const genders = document.createElement("p")
+//     genders.classList.add("contents")
+//     genders.innerHTML = `Gêneros: <span class="dynamic-text">${serie.generos.join(" - ")}
+//     </span>`
+//     card.appendChild(genders)
+
+//   const cast = document.createElement("p")
+//   cast.classList.add("contents")
+//   cast.innerHTML = `Elenco: <span class= 'dynamic-text">${serie.elenco.join(" - ")}</span>`
+//   card. appendChild(cast)
+
+//   const instagram = document. createElement("a")
+//   instagram.setAttribute("href", serie.instagram)
+//   instagram.setAttribute("target", "_blank")
+//   instagram.innerHTML = `<i class="fa-brands fa-instagram"></i>`
+//   card.appendChild(instagram)
+
+
+
+
+//   })
+// }
