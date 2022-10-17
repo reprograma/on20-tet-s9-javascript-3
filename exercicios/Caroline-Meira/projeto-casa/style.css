@@ -11,7 +11,15 @@
 
 body {
   width: 100%;
-  background-color: #8854d0; /* https://flatuicolors.com/palette/de */
+ background: linear-gradient(132deg, #000000,#00ff00, #0000ff,#e60073,#ff0000,#ffffff);
+  background-size: 400% 400%;
+  animation: BackgroundGradient 15s ease infinite;
+}
+
+@keyframes BackgroundGradient {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
 }
 
 #demo {
@@ -22,7 +30,7 @@ body {
 }
 
 .cards {
-  background-color: #f1f1f140;
+  background-color: #98979740;
   backdrop-filter: blur(10px);
   width: 15vw;
   min-height: 50vh;
@@ -32,13 +40,13 @@ body {
   align-items: center;
   justify-content: space-between;
   border-radius: 2rem;
-  box-shadow: 2px 4px 10px #57657470;
+  box-shadow: 3px 5px 10px #57657470;
 }
 
 .covers {
   margin-top: 1rem;
   border-radius: 50%;
-  border: solid 2px #a55eea50;
+  border: solid 3px #a55eea50;
   height: 20vh;
 }
 
