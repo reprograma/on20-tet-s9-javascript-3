@@ -1,4 +1,4 @@
-const json = [
+const series = [
   {
     "imagem": "./images/pose.jpg",
     "titulo": "Pose",
@@ -46,11 +46,85 @@ const json = [
   }
 ]
 
+/*
+const listseries = document.querySelector("#list-series");
+
+fillSeries = (seriado) => {
+  // variável que cria um novo card
+  let card = document.createElement('div');
+=======
 /* 
 O exercício consiste em usar JavaScript para popular os campos corretamente com os dados do arquivo data.json (ou do objeto JSON) um site de informações sobre séries protagonizadas por mulheres trans e travestis, neste caso a página exibe 5 séries, em 5 cards diferentes em uma só página;
 
-Importante:
 
+  //inclusão de classe no card
+  card.classList.add("card");
+  //inclusão do card no section
+  listseries.appendChild(card);
+
+  // criação e inclusão de poster no card
+  let poster = document.createElement('img');
+  poster.setAttribute('src', seriado.imagem);
+  poster.setAttribute('alt', "pôster da serie");
+  poster.classList.add('poster');
+  let posterbox = document.createElement('div');
+
+  //poster box criado para padronizar as imagens
+  posterbox.classList.add('poster-box');
+  posterbox.appendChild(poster);
+  card.appendChild(posterbox);
+
+  //criação e inclusão de título no card
+  let title = document.createElement('h2');
+  title.innerHTML = seriado.titulo;
+  card.appendChild(title); 
+
+  //criação e inclusão de ano no card
+  let year = document.createElement('p');
+  year.innerHTML= `Ano: ${seriado.ano}`;
+  year.classList.add('year');
+  card.appendChild(year);
+
+  //criação e inclusão do diretor no card
+  let director = document.createElement('p');
+  director.innerHTML= `Diretor: ${seriado.diretor}`;
+  director.classList.add('director');
+  card.appendChild(director);
+
+  //criação e inclusão do gêneros no card
+  let genres = document.createElement('p');
+  genres.innerHTML= `Gênero: ${seriado.generos}`;
+  genres.classList.add('genres');
+  card.appendChild(genres);
+  
+  //criação e inclusão do elenco no card
+  let cast = document.createElement('p');
+  cast.innerHTML= `Elenco: ${seriado.elenco}`;
+  cast.classList.add('cast');
+  card.appendChild(cast);
+  
+  //inclusão do icone e adição de classe
+  let icone = document.createElement('i');
+  icone.classList.add('fab');
+  icone.classList.add('fa-instagram');
+  
+  //criação e inclusão do instagram no card
+  let instagram = document.createElement('a');
+  instagram.setAttribute('href', seriado.instagram);
+  instagram.setAttribute('target', '_blank');
+  instagram.appendChild(icone);
+  card.appendChild(instagram);
+}
+
+
+//laço de repetição para mostrar todas as linhas do array.
+series.forEach(linhaSerie => {
+  fillSeries(linhaSerie)
+});
+
+
+
+=======
 1. Crie seu próprio layout usando HTML e CSS nos arquivos já criados nesta pasta;
 2. Repare que este Json é uma matriz, logo é possível usar métodos de array para acessar seu conteúdo;
 3. Entregue este exercício da maneira que conseguir, use o exemplo da sala para guiar nesta construção;

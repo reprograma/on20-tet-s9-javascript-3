@@ -1,3 +1,88 @@
+/*
+*{
+    margin: 0%;
+    padding: 0%;
+
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: beige;
+}
+
+header{
+    padding: 10px;
+    background-color:  rgb(93, 93, 16);
+
+}
+.main-title{
+    font-weight: bolder;
+    font-size: 4em;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    justify-content: center;
+}
+
+a i{
+    color:rgb(77, 77, 12);
+    margin: 5px 0;
+}
+
+body{
+    background-color: rgb(183, 183, 133);
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;    
+    margin: 15px;
+    padding: 10px;
+}
+
+.card{
+    border-radius: 25px 0;
+    background: rgba(255,255,255,0.3);
+    width: 400px;
+    padding: 10px;
+    margin: 5px;
+    /* border: solid 2px black; */
+    text-align: center;
+}
+
+.card:hover{
+    box-shadow: 0px -5px 20px 0px rgb(80, 80, 35);
+    border-radius: 25px;
+}
+
+.poster{
+    width: 140px;
+}
+
+/* caixa criada para padronizar o tamanho das imagens */
+.poster-box{
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+}
+
+.year, .director, .genres, .cast{
+    font-weight: bolder;
+    color: rgb(57, 56, 56);
+    font-size: 18px;
+    padding: 2px;
+}
+
+.cast {
+    font-size: 15px;
+}
+
+
+
+=======
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;1,400&display=swap');
 
 * {
@@ -71,3 +156,4 @@ body {
   color: plum;
   outline: none;
 }
+*/
