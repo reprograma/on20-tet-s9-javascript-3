@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    min-width: 100vh;
+    width: 100%;
+    background-color: rgb(91, 66, 114);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#main-wapper{
+    background-color: #f1f1f140;
+    backdrop-filter: blur(10px);
+    min-height: 60vh;
+    min-height: 35rem;
+    padding:3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 2rem;
+    box-shadow: 2px 4px 10px #57657470;
+    
+}
+#titulo{
+    margin: 2rem 0 1rem 0;
+    font-size: 2rem;
+    color: rgb(247, 247, 247);
+}
+#sub-titulo{
+margin: 1rem 0 1rem 0 ;
+}
+#opcoes-series{
+    margin: 1rem 0 1rem 0;
+}
+.informacoes{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.info{
+    font-size: 1.1rem;
+  color: white;
+  font-weight: 600;
+  margin: 1rem 0 1rem 0;
+}
+.texto-dinamico{
+    font-size: 1rem;
+  color: #14141499;
+  margin-left: 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+}
