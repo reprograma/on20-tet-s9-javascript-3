@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body{
+   background-color: rgba(59, 59, 57, 0.877);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+  }
+
+  header{
+    text-align: center;
+    padding: 50px;
+    height: 180px;
+  }
+
+  select {
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  main{
+    background-color: aliceblue;
+    display: none;
+    flex-direction: row-reverse;
+    margin-top: 40px;
+  }
+
+  .informação{
+    padding: 40px;
+    width: 350px;
+  }
+
+  main img{
+    height: 350px;
+    width: 350px;
+    margin-top: 25px;
+  }
+
+  .card{
+    width: 250px;
+    height: 250px;
+    list-style: none;
+    text-align: center;
+
+  }
+
+  .card img{
+    height: 180px;
+    border-radius: 50%;
+    width: 158px;
+    margin: 13px;
+  }
+
+  .card h2{
+     font-size: 20px;
+     font-style: normal;
+  }
+
+  ul{
+    display: flex;
+    padding: 20px;
+  }
+
+  h1{
+    font-style: normal;
+    font-size: 40px;
+  }
+
+
+  a {
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(91, 76, 231);
+  }
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Projeto S9 - On20 </title>
+    <script defer scr="."></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>Séries protagonizadas por mulheres trans e travestis!</h1>
+        <p>Selecione uma série e saiba mais sobre! :) </p>
+
+        <select name="select" id="select" onchange="preencherDados()">
+            <option value="">Escolha uma Série</option>
+        </select>
+    </header>
+    <ul id="lista"></ul>
+   <main id="principal">
+       <img id="imagem" src="./images/" alt="">
+    <section class="informaçao">
+        <h2 id="titulo">Nome da série</h2>
+        <hr>
+        <p>Ano:  <br> <span class="dynamic-text" id="ano"></span></p>
+        <hr>
+        <p>Diretor:  <br> <span class="dynamic-text" id="diretor"></span></p>
+        <hr>
+        <p>Gênero:  <br> <span class="dynamic-text" id="gênero"></span></p>
+        <hr>
+        <p>Elenco:  <br> <span class="dynamic-text" id="elenco"></span></p>
+        <hr>
+        <a id="instagram" target="_blank" href="">
+            <i class="fab fa-instagram"></i>
+          </a>
+    </section>
+
+   </main> 
+
+</body>
+</html>
